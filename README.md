@@ -20,7 +20,7 @@ Los pasos realizados por el multiplicador son:
 
 El diseño lógico de la microarquitectura se presenta a continuación en forma de diagrama de bloques:
 
-![single_cycle_block_diagram](./img/syngle_cycle.png)
+![single_cycle_block_diagram](./img/single_cycle.png)
 
 ### Diseño 2
 El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectura segmentada de multiplicadores de 8x8 con suma de productos parciales y registros. El diseño presenta las siguientes etapas:
