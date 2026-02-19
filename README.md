@@ -1,9 +1,12 @@
 # FPGAs-Proyecto1
-Proyecto corto 1
 
 ## Descripción del proyecto
 
 ## Explicación de los diseños
+
+### Diseño 1 
+### Diseño 2
+### Diseño 3
 
 ## Instrucciones de construcción
 
