@@ -45,7 +45,7 @@ El diseño 3 implementa el multiplicador de 64x64 bits usando el algoritmo de mu
 
 El diseño lógico de la microarquitectura se presenta a continuación en forma de diagrama de bloques:
 
-<img src="https://github.com/isaacfallas/FPGAs-Proyecto1/tree/main/img" width="128"/>
+![booth_multiplier_block_diagram](./img/booth_multiplier.png)
 
 ## Instrucciones de construcción
 
