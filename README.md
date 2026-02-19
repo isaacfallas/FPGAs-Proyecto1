@@ -2,6 +2,9 @@
 
 ## Descripción del proyecto
 
+Este repositorio contiene la implementación y resultados de **tres diseños** descritos en el enunciado del **Proyecto Corto 1**.  
+El objetivo es implementar los diseños en HDL utilizando SystemVerilog/Verilog, sintetizarlos e implementarlos en Vivado, y reportar resultados de **utilización** y **timing**.
+
 ## Explicación de los diseños
 
 ### Diseño 1 
