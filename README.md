@@ -64,11 +64,11 @@ El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectu
 
 | Parámetro | Diseño 1 | Diseño 2 | Diseño 3 |
 |----------|----------|----------|----------|
-| Timing / delay de la ruta crítica (ns) | 7.001 | 3.294 | _[ ]_ |
-| Frecuencia máxima lograda (MHz) | 142.8 | 303.6 | _[ ]_ |
-| Latencia (ciclos) | 1 | 7 | _[ ]_ |
-| LUT (CLB LUTs) | 173 | 5475 | _[ ]_ |
-| FF (CLB Registers) | 128 | 3664 | _[ ]_ |
+| Timing / delay de la ruta crítica (ns) | 7.001 | 3.294 | 2,723 |
+| Frecuencia máxima lograda (MHz) | 142.8 | 303.6 | 367,2 |
+| Latencia (ciclos) | 1 | 7 | 64 |
+| LUT (CLB LUTs) | 173 | 5475 | 141 |
+| FF (CLB Registers) | 128 | 3664 | 330 |
 
 -------
 
