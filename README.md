@@ -8,6 +8,16 @@ El objetivo es implementar los diseños en HDL utilizando SystemVerilog/Verilog,
 ## Explicación de los diseños
 
 ### Diseño 1 
+
+El diseño 1 implementa un multiplicador de 64x64 bits utilizando una arquitectura de uniciclo. Este presenta cuatro entradas de 32 bits que representan la parte lsb y msb de los buses de datos que se desean operar, además de una entrada de reloj. Para la salida, presenta un resultado descomupesto en cuatro salidas de 32 bits. Dicho diseño se debe al GPIO utilizado que posee entradas y salidas de 32 bits.
+
+Los pasos realizados por el multiplicador son:
+
+1. Recibir las cuatro entradas de 32 bits que representan a(lsb), a(msb), b(lsb) y b(msb), donde a y b son los factores en la multiplicación de 64 bits, así como la entrada del reloj.
+2. Concatenar a(lsb), a(msb), b(lsb) y b(msb) para realizar la multiplicación a*b.
+3. Ejecución de la multiplicación a*b.
+4. Asignar en cada flanco positivo del reloj, las salidas del producto descompuesto en cuatro canales de 32 bits. 
+
 ### Diseño 2
 El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectura segmentada de multiplicadores de 8x8 con suma de productos parciales y registros. El diseño presenta las siguientes etapas:
 1. 64 Multiplicadores 8x8 que calculan los productos parciales de cada byte de los operandos de entrada: a y b.
@@ -65,12 +75,9 @@ El diseño lógico de la microarquitectura se presenta a continuación en forma 
 ```
 .
 ├─ img/
-|  └─ booth_multiplier.png   # Diagrama de bloques del multiplicador de Booth
+|  └─ booth_multiplier.png    # Diagrama de bloques del multiplicador de Booth
 ├─ D1/
-│  ├─ src/
-│  ├─ tb/
-│  ├─ xdc/
-│  └─ reports/
+│  └─ mul64x64_uniciclo.v     # RTL del multiplicador 64x64 uniciclo
 ├─ D2/
 │  ├─ mul64x64.sv             # Módulo top del multiplicador 64x64
 │  ├─ mul64x64_wrapper.v      # Wrapper del top en Verilog
@@ -104,7 +111,7 @@ El diseño lógico de la microarquitectura se presenta a continuación en forma 
 
 ## Institución
 
-   #### Instituto Tecnológico de Costa Rica
+   ### Instituto Tecnológico de Costa Rica
 
 ## Profesor
 
