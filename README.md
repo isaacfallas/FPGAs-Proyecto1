@@ -43,12 +43,25 @@
 
 -------
 
-nombre del curso
+Nombre del curso
 
-programa
+   MP-6166 Diseño Avanzado con FPGAs
 
-institución
+Programa
 
-profesor
+   Maestría en Ingeniería Electrónica
 
-estudiantes
+Institución
+
+   Instituto Tecnológico de Costa Rica
+
+Profesor
+
+   León Vega, Luis Gerardo
+
+Estudiantes
+
+   Aguero Villagra, Leonardo Enrique
+   Cruz Soto, Federico Alonso
+   Fallas Mejía, Jorge Isaac
+   Gutiérrez Quesada, Allan Mauricio
