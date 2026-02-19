@@ -101,25 +101,13 @@ El diseño lógico de la microarquitectura se presenta a continuación en forma 
 
 -------
 
-## Nombre del curso
+### MP-6166 Diseño Avanzado con FPGAs
+### Maestría en Ingeniería Electrónica
+### Instituto Tecnológico de Costa Rica
+### Profesor Ph. D. León Vega, Luis Gerardo
 
-   ### MP-6166 Diseño Avanzado con FPGAs
-
-## Programa
-
-   ### Maestría en Ingeniería Electrónica
-
-## Institución
-
-   ### Instituto Tecnológico de Costa Rica
-
-## Profesor
-
-   ### León Vega, Luis Gerardo
-
-## Estudiantes
-
-   ### Aguero Villagra, Leonardo Enrique
-   ### Cruz Soto, Federico Alonso
-   ### Fallas Mejía, Jorge Isaac
-   ### Gutiérrez Quesada, Allan Mauricio
+### Estudiantes
+Aguero Villagra, Leonardo Enrique
+Cruz Soto, Federico Alonso
+Fallas Mejía, Jorge Isaac
+Gutiérrez Quesada, Allan Mauricio
