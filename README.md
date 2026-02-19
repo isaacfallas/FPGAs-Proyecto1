@@ -18,6 +18,10 @@ Los pasos realizados por el multiplicador son:
 3. Ejecución de la multiplicación a*b.
 4. Asignar en cada flanco positivo del reloj, las salidas del producto descompuesto en cuatro canales de 32 bits. 
 
+El diseño lógico de la microarquitectura se presenta a continuación en forma de diagrama de bloques:
+
+![single_cycle_block_diagram](./img/syngle_cycle.png)
+
 ### Diseño 2
 El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectura segmentada de multiplicadores de 8x8 con suma de productos parciales y registros. El diseño presenta las siguientes etapas:
 1. 64 Multiplicadores 8x8 que calculan los productos parciales de cada byte de los operandos de entrada: a y b.
