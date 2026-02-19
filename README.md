@@ -45,7 +45,7 @@ El diseño 3 implementa el multiplicador de 64x64 bits usando el algoritmo de mu
 
 El diseño lógico de la microarquitectura se presenta a continuación en forma de diagrama de bloques:
 
-
+<img src="https://github.com/isaacfallas/FPGAs-Proyecto1/tree/main/img" width="128"/>
 
 ## Instrucciones de construcción
 
@@ -64,17 +64,19 @@ El diseño lógico de la microarquitectura se presenta a continuación en forma 
 ## Árbol de archivos con su descripción
 ```
 .
+├─ img/
+|  └─ booth_multiplier.png   # Diagrama de bloques del multiplicador de Booth
 ├─ D1/
 │  ├─ src/
 │  ├─ tb/
 │  ├─ xdc/
 │  └─ reports/
 ├─ D2/
-│  ├─ mul64x64.sv          # Módulo top del multiplicador 64x64
-│  ├─ mul64x64_wrapper.v   # Wrapper del top en Verilog
-│  ├─ mul8x8.sv            # Módulo del multiplicador 8x8
-│  ├─ shifter.sv           # Módulo de desplazamiento de productos parciales
-│  └─ sum_tree.sv          # Árbol de sumas
+│  ├─ mul64x64.sv             # Módulo top del multiplicador 64x64
+│  ├─ mul64x64_wrapper.v      # Wrapper del top en Verilog
+│  ├─ mul8x8.sv               # Módulo del multiplicador 8x8
+│  ├─ shifter.sv              # Módulo de desplazamiento de productos parciales
+│  └─ sum_tree.sv             # Árbol de sumas
 └─ D3/
    ├─ booth_multiplier.sv     # RTL del multiplicador de Booth
    └─ booth_multiplier_wrap.v # Wrapper del multiplicador de Booth (debe ser el Top)
