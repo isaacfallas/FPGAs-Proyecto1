@@ -107,7 +107,11 @@ El diseño lógico de la microarquitectura se presenta a continuación en forma 
 ### Profesor Ph. D. León Vega, Luis Gerardo
 
 ### Estudiantes
+
 Aguero Villagra, Leonardo Enrique
+
 Cruz Soto, Federico Alonso
+
 Fallas Mejía, Jorge Isaac
+
 Gutiérrez Quesada, Allan Mauricio
