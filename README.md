@@ -27,6 +27,18 @@ El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectu
 
 ## Instrucciones de construcción
 
+### Vivado (GUI)
+1. Abrir Vivado.
+2. Crear un proyecto para la Kria KV260 y seleccionar los archivos ubicados en la carpeta del diseño:
+   - `D1/` o `D2/` o `D3/`
+2. Generar el diagrama de bloques (PS + PL) y conexiones entre módulos.
+3. Correr:
+   - **Run Synthesis**
+   - **Run Implementation**
+4. Generar reportes:
+   - **Report Utilization**
+   - **Report Timing Summary**
+
 ## Árbol de archivos con su descripción
 ```
 .
