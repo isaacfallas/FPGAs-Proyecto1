@@ -28,6 +28,25 @@ El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectu
    4.6. Nivel 6: 2 -> suma final + Etapa de pipeline
 ### Diseño 3
 
+El diseño 3 implementa el multiplicador de 64x64 bits usando el algoritmo de multiplicación de Booth (usando radix-2). Este algoritmo se usa para multiplicar dos números con signo. El algoritmo presenta los siguientes pasos:
+
+1. Inicializar los valores de los registros:
+  1.1 A = 0 (Acumulador).
+  1.2 Qm1 = 0
+  1.3 M = multiplicando.
+  1.4 Q = multiplicador.
+  1.5 Por ser de 64 bits el contador tendrá un valor inicial de 64 bits.
+2. Revisar el valor de {Q, Qm1}. Si es 00 ó 11 ir al paso 5. Si es 01 ir al paso 3 y si es 10 ir al paso 4.
+3. Calcular next_A = A + M.
+4. Calcular next_A = A - M.
+5. Realizar un acarreo aritmético de {A, Q, Qm1} y decrementar el contador en 1.
+6. Si el contador es 0, ir al paso 7. Si el contador es distinto de 0 ir al paso 2.
+7. Terminar y declarar el producto como válido.
+
+El diseño lógico de la microarquitectura se presenta a continuación en forma de diagrama de bloques:
+
+
+
 ## Instrucciones de construcción
 
 ### Vivado (GUI)
@@ -57,10 +76,8 @@ El diseño 2 implementa el multiplicador de 64x64 bits utilizando una arquitectu
 │  ├─ shifter.sv           # Módulo de desplazamiento de productos parciales
 │  └─ sum_tree.sv          # Árbol de sumas
 └─ D3/
-   ├─ src/
-   ├─ tb/
-   ├─ xdc/
-   └─ reports/
+   ├─ booth_multiplier.sv     # RTL del multiplicador de Booth
+   └─ booth_multiplier_wrap.v # Wrapper del multiplicador de Booth (debe ser el Top)
 ```
 
 ## Tabla de resultados (AMD Kria KV260, 300 MHz)
