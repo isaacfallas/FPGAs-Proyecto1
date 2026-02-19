@@ -8,6 +8,23 @@ Proyecto corto 1
 ## Instrucciones de construcción
 
 ## Árbol de archivos con su descripción
+.
+├─ D1/
+│  ├─ src/
+│  ├─ tb/                 
+│  ├─ xdc/               
+│  └─ reports/            
+├─ D2/
+│  ├─ mul64x64.sv          # Módulo top del multiplicador 
+│  ├─ mul64x64_wrapper.v   # Wrapper del top en Verilog
+│  ├─ mul8x8.sv            # Módulo del multiplicador 8x8
+│  ├─ shifter.sv           # Módulo de desplazamiento de productos parciales
+│  └─ sum_tree.sv          # Árbol de sumas
+└─ D3/
+   ├─ src/
+   ├─ tb/
+   ├─ xdc/
+   └─ reports/
 
 ## Tabla de resultados (AMD Kria KV260, 300 MHz)
 
