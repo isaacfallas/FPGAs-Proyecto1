@@ -1,5 +1,7 @@
 # FPGAs-Proyecto1
 
+https://github.com/isaacfallas/FPGAs-Proyecto1
+
 ## Descripción del proyecto
 
 Este repositorio contiene la implementación y resultados de **tres diseños** descritos en el enunciado del **Proyecto Corto 1**.  
